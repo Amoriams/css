@@ -4,3 +4,5 @@
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
 <a href='https://amoriams.github.io/tentativa/siteb99/index.html'>executar o site de b99</a>
+
+<a href="https://amoriams.github.io/css/desafio12/projeto-cordel.html"> projeto cordel feito sozinha</a>
