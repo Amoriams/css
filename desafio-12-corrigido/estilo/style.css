@@ -16,7 +16,7 @@
 }
 
 html, body{
-    min-height: 100vh;
+    min-height: 50vh;
     background-color: darkgray;
     font-family: var(--fonte1);
 }
@@ -84,14 +84,14 @@ section > p{
 
 section#img1{
     background-image: url(../imagens/background001.jpg);
-    background-position: right center;
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 section#img2{
     background-image: url(../imagens/background002.jpg);
-    background-position: right center;
+    background-position: center center;
     background-size: cover;
     background-attachment: fixed;
 }
