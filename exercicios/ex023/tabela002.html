@@ -13,11 +13,19 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
             border: 1px solid black;
+            padding: 10px
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
             padding: 10px;
+            background-color: lightgrey;
         }
 
         thead, tfoot{
@@ -25,9 +33,19 @@
             color: white;
         }
 
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
         a{
             text-decoration: none;
-            color: black;
+            color: black;;
         }
 
         a:hover{
@@ -45,6 +63,9 @@
 <body>
     <h1>uso de tabelas grandes</h1>
     <!-- ANATOMIA PARA TABELAS GRANDES 
+
+            CAPTION
+
             TABLE
                 THEAD
                 -TR, TD, TH
@@ -54,10 +75,12 @@
                         -TR, TD, TH
     -->
 <table>
+
+    <caption>População das unidades federativas</caption>
     <thead>
         <tr>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px;">População</th>
         </tr>
     </thead>
 
@@ -176,7 +199,7 @@
 
     <tfoot>
         <tr>
-            <th>Habitantes</th>
+            <th scope="row">Habitantes</th>
             <td class="num"><strong>000 000 000</strong></td>
         </tr>
     </tfoot>
